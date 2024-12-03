@@ -5,6 +5,9 @@ import os
 # Load environment variables from .env file
 load_dotenv()
 
+
+
+
 MONGO_DB_URL = os.getenv("MONGO_DB_URL")
 if not MONGO_DB_URL:
     raise ValueError("MONGO_DB_URL is not set in environment variables")
